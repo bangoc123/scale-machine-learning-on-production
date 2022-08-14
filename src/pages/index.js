@@ -30,8 +30,8 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Đưa sản phâm học máy lên sản phẩm thực tế`}
-      description="Đưa sản phâm học máy lên sản phẩm thực tế, Nhân rộng mô hình học máy.">
+      title={`Đưa mô hình học máy lên sản phẩm thực tế`}
+      description="Đưa mô hình học máy lên sản phẩm thực tế, Nhân rộng mô hình học máy.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
