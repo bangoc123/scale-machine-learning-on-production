@@ -6,7 +6,7 @@ Chúng tôi nhận thấy chưa có nhiều người chia sẻ về kinh nghiệ
 
 ## Tại sao chúng tôi lại tự tin chia sẻ?
 --- 
-Vì chúng tôi đã triển khai sản phẩm thực tế. Team ProtonX đã dành nhiều thời gian để phát triển bộ gõ [thông minh](https://protonx.io/smart-editor) và thời gian để bộ gõ đề xuất các từ tiếp theo rơi vào khoảng `800ms - 1.2s` và tất cả các tính toán này được thực hiện **hoàn toàn trên CPU**.
+Vì chúng tôi đã triển khai sản phẩm thực tế. [Team ProtonX](https://scale-ml.github.io/blog/Authors) đã dành nhiều thời gian để phát triển bộ gõ [thông minh](https://protonx.io/smart-editor) và thời gian để bộ gõ đề xuất các từ tiếp theo rơi vào khoảng `800ms - 1.2s` và tất cả các tính toán này được thực hiện **hoàn toàn trên CPU**.
 
 Demo sản phẩm chúng tôi xây dựng:
 

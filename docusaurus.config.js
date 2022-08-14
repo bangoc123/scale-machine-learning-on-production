@@ -92,7 +92,7 @@ const config = {
           // {to: '/blog', label: 'Blog', position: 'left'},
           {to: '/blog', label: 'Tác giả', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/bangoc123/scale-machine-learning-on-production',
             label: 'GitHub',
             position: 'right',
           },
