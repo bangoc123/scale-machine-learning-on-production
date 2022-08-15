@@ -20,7 +20,7 @@ Bảng trên so sánh hai thuật toán đó là Gradient Descent và Stochastic
 
 Với thuật toán SGD ta nhận thấy, với bộ dữ liệu có $10^6$ phần tử thì trong mỗi vòng lặp, ta cũng cần phải tính giá trị hàm mất mát với số lượng tương đương $10^6$ lần.
 
-Rõ ràng dễ dàng nhận thấy nếu có một cơ chế lặp ít hơn để cập nhật bộ tham số thay vì lặp qua toàn bộ.
+Rõ ràng dễ dàng nhận thấy sẽ tốt hơn nếu có một cơ chế lặp ít hơn để cập nhật bộ tham số thay vì lặp qua toàn bộ.
 
 **2) Cách giải quyết** 
 
@@ -34,7 +34,7 @@ $$
 E[Z] = \frac{1}{n}\sum_{i=1}^{n}cost(\theta, (x^{(i)}, y^{(i)})) = J(\theta)
 $$
 
-Giả sử trong $10^6$ lần tính toán bên trên, ta lấy ra $\bold{K}$ lần ngẫu nhiên những giá trị $Z_1, Z_2, \cdots Z_n$ giống $Z$ bên trên thì trung bình những giá trị này sẽ có thể xấp xỉ  $J(\theta)$. Tức là:
+Giả sử trong $10^6$ lần tính toán bên trên, ta lấy ra $\bold{K}$ lần ngẫu nhiên IID (độc lập và có cùng phân phối) $Z_1, Z_2, \cdots Z_n$ giống $Z$ bên trên thì trung bình những giá trị này sẽ có thể xấp xỉ  $J(\theta)$. Tức là:
 
 $$
 S(K) = \frac{1}{K}\sum_{1}^{K}Z_k \approx J(\theta)
@@ -50,9 +50,11 @@ $$
 P(| S_K - E[Z| \geqslant a)  \leqslant  \frac{1}{a^24K}
 $$ 
 
+Biểu thức này cho ta biết có thể tìm ra cận trên của một ước lượng xác suất khả năng sai lệch giữa trung bình các mẫu với kỳ vọng biến ngẫu nhiên.
+
 Ta ứng dụng công thức này như thế nào?
 
-Ví dụ, nếu bạn muốn ước lượng giá trị mất mát sao cho xác suất độ lệch giữa trung bình các mẫu với giá trị mất mát thật nhỏ hơn 10% lớn hơn 99%. Thì cần số lượng mẫu ước lượng $K$ là bao nhiêu?
+Ví dụ, nếu bạn muốn ước lượng giá trị mất mát sao cho xác suất đại lượng thể hiện độ lệch giữa trung bình các mẫu với giá trị mất mát thật nhỏ hơn 10% với giá trị lớn hơn 99%. Thì cần số lượng mẫu ước lượng $K$ là bao nhiêu?
 
 **Lời giải**: Câu hỏi đề bài sẽ được quy về như sau:
 
