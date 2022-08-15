@@ -62,13 +62,15 @@ P(|S(K) - J(\theta)|  \leqslant  0.1) \geqslant   0.99 \\
 \Leftrightarrow P(|S(K) - J(\theta)|  \geqslant  0.1)  \leqslant  0.01
 $$
 
-Thì để điều này xảy ra thì cận trên của $$\Leftrightarrow P(|S(K) - J(\theta)|  \geqslant  0.1)$$ phải nhỏ hơn $0.11$ tức là:
+Để điều này xảy ra thì cận trên của $$P(|S(K) - J(\theta)|  \geqslant  0.1)$$ phải nhỏ hơn $0.01$ tức là:
 
 $$
 \frac{1}{a^24K} \leqslant  0.01 \\
 
 \Leftrightarrow  K \geqslant \frac{1}{4 \times 0.01^2} = 2500
 $$
+
+Vậy cần ít nhất 2500 mẫu để có thể thực hiện được điều này.
 
 
 
