@@ -6,19 +6,24 @@ Chúng tôi nhận thấy chưa có nhiều người chia sẻ về kinh nghiệ
 
 ## Tại sao chúng tôi lại tự tin chia sẻ?
 --- 
-Vì chúng tôi đã triển khai sản phẩm thực tế. [Team ProtonX](https://scale-ml.github.io/blog/Authors) đã dành nhiều thời gian để phát triển bộ gõ [thông minh](https://protonx.io/smart-editor) và thời gian để bộ gõ đề xuất các từ tiếp theo rơi vào khoảng `800ms - 1.2s` và tất cả các tính toán này được thực hiện **hoàn toàn trên CPU**.
+Vì chúng tôi đã triển khai sản phẩm thực tế. [Team ProtonX](https://scale-ml.github.io/blog/Authors) đã dành nhiều thời gian để phát triển bộ gõ [thông minh](https://bluestudio.ai/).
 
-Demo sản phẩm chúng tôi xây dựng:
+Sản phẩm chúng tôi xây dựng:
 
 <!-- <style>img{max-width: "100%";height: auto;}</style> -->
 
-![](https://storage.googleapis.com/mle-courses-prod/users/61b869ca9c3c5e00292bb42d/private-files/14f056e0-1b8c-11ed-ae93-23e19df12391-smarteditor.png)
+![](https://protonx.ai/wp-content/uploads/2022/10/jd-1024x793.png)
 
-**Bạn gõ:** "Các nhà khoa học có khả năng nghiên cứu tế bào gốc"
+**Bạn gõ:** "Business Analyst (BA)/ Data Analyst"
 
-**Các từ tiếp theo được đề xuất:** "từ các mô của người trưởng thành."
+Một mô tả tự động được đề xuất cho bạn
 
-Bộ gõ đủ thông minh để có thể đề xuất dấu câu một cách chính xác.
+**Bao gồm 3 phần**
+- Mô tả công việc
+- Yêu cầu công việc 
+- Quyền lợi 
+
+
 
 ## Đưa sản phẩm học máy lên thực tế không dễ
 --- 

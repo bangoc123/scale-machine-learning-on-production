@@ -9,7 +9,7 @@ const FeatureList = [
     description: (
       <>
         {/* <p>Chia sẻ tất cả nghiên cứu về việc mở rộng (scale) mô hình học máy trên sản phẩm thực tế (production).</p> */}
-        <p>Những kinh nghiệm này được đúc rút khi <a href='https://scale-ml.github.io/blog/Authors'>ProtonX Team</a> xây dựng sản phẩm <a href='https://protonx.io/smart-editor'>Soạn thảo thông minh</a></p>
+        <p>Những kinh nghiệm này được đúc rút khi <a href='https://scale-ml.github.io/blog/Authors'>ProtonX Team</a> xây dựng sản phẩm <a href='https://bluestudio.ai/'>Soạn thảo thông minh</a></p>
         <p>Và một điều thú vị đó là chúng tôi đang dùng <b>chính bộ gõ này</b> để soạn thảo blog này.</p>
       </>
     ),
