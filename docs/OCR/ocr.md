@@ -134,7 +134,11 @@ Mạng [CRNN](https://github.com/bgshih/crnn) được tạo nên dựa trên nh
 
 #### c) Tiếp cận theo hướng Seq2Seq trong dịch máy
 
+<<<<<<< HEAD
 Kiến trúc [CRNN](https://github.com/bgshih/crnn) sử dụng [CTC Loss](https://distill.pub/2017/ctc) có 1 hạn chế là ta phải cẩn thận điều chỉnh kiến trúc mô hình để kích thước của vùng nhận thức (receptive field) khớp với số lượng ký tự tối đa có thể dự đoán (max length của text). Một bổ sung phổ biến cho mô hình CRNN có thể được sử dụng để cải thiện dự đoán của văn bản trong ảnh đầu vào là một Cơ chế Attention. Trong hướng tiếp cận này, như thường lệ, đầu tiên ta sẽ sử dụng các mạng `CNN` để trích xuất đặc trưng ảnh. Sau đó, các đặc trưng này sẽ được chuyển thành chuỗi và truyền qua mạng `RNN` để có được kết quả cho Cơ chế Attention xử lý.
+=======
+Kiến trúc [CRNN](https://github.com/bgshih/crnn) sử dụng [CTC Loss](https://distill.pub/2017/ctc) có 1 hạn chế là ta phải cẩn thận điều chỉnh kiến trúc mô hình để kích thước của vùng nhận thức (receptive field) khớp với số lượng ký tự tối đa có thể dự đoán (max lengtg của text). Một bổ sung phổ biến cho mô hình CRNN có thể được sử dụng để cải thiện dự đoán của văn bản trong ảnh đầu vào là một Cơ chế Attention. Trong hướng tiếp cận này, như thường lệ, đầu tiên ta sẽ sử dụng các mạng `CNN` để trích xuất đặc trưng ảnh. Sau đó, các đặc trưng này sẽ được chuyển thành chuỗi và truyền qua mạng `RNN` để có được kết quả cho Cơ chế Attention xử lý.
+>>>>>>> 53957c72716f740c015ada2cb76149f8863b7f3e
 
 Mô hình sử dụng trong quá trình này được lấy cảm hứng và có cách hoạt động tương tự mô hình [Attention Seq2Seq](https://www.tensorflow.org/text/tutorials/nmt_with_attention) cho bài toán dịch máy. Với 1 bài toán dịch máy từ tiếng Việt sang Anh, ta cần encode 1 chuỗi tiếng Việt thành một vector đặc trưng, còn trong mô hình này, dữ liệu đầu vào sẽ là 1 ảnh.
 
@@ -171,7 +175,11 @@ Bên trên chỉ là một số hướng tiếp cận dễ thấy nhất, đư�
 
 ### 1. Metrics đánh giá Text Detection và End-to-End
 
+<<<<<<< HEAD
 Để đánh giá kết hợp 2 tác vụ phát hiện và nhận dạng các ký tự trong ảnh, phương pháp thường được sử dụng là `IoU` - [Intersection over Union](https://pyimagesearch.com/2016/11/07/intersection-over-union-iou-for-object-detection/) kết hợp với Các từ được công nhận chính xác - `CRW`. Với giai đoạn **Text Detection**, phương pháp `IoU` chỉ chấp nhận `bounding box` được dự đoán là đúng khi và chỉ khi giá trị `IoU` cho 2 `bounding box` được dự đoán thỏa 1 `threshold` nhất định (thường > 0.5). Mặc dù `IoU` được sử dụng rộng rải nhưng cách tính của nó lại không phù hợp đối với các bài toán cần độ chi tiết và chính xác cao, điều này là rất quan trọng đối với các tác vụ `OCR`.
+=======
+Để đánh giá kết hợp 2 tác vụ phát hiện và nhận dạng các ký tự trong ảnh, phương pháp thường được sử dụng là `IoU` kết hợp với Các từ được công nhận chính xác - `CRW`. Với giai đoạn **Text Detection**, phương pháp `IoU` chỉ chấp nhận `bounding box` được dự đoán là đúng khi và chỉ khi giá trị `IoU` cho 2 `bounding box` được dự đoán thỏa 1 `threshold` nhất định (thường > 0.5). Mặc dù `IoU` được sử dụng rộng rải nhưng cách tính của nó lại không phù hợp đối với các bài toán cần độ chi tiết và chính xác cao, điều này là rất quan trọng đối với các tác vụ `OCR`.
+>>>>>>> 53957c72716f740c015ada2cb76149f8863b7f3e
 
 Với giai đoạn nhận dạng văn bản trong ảnh, phương phương pháp `CRW` được sử dụng như một cách đánh giá nhị phân đơn thuần, khi tất cả các văn bản được nhận dạng trùng hoàn toàn với nhãn thì sẽ được tính là 1, ngược lại sẽ là 0. Vì vậy, giới hạn của phương pháp này là không thể đưa ra các chỉ số đánh giá khác nhau cho một kết quả nhận dạng vô lý và một kết quả gần như chính xác.
 
@@ -194,4 +202,7 @@ Với bài toán này thì các bạn có thể sử dụng các phương pháp 
 -   https://nanonets.com/blog/deep-learning-ocr
 -   https://nanonets.com/blog/handwritten-character-recognition
 -   https://theailearner.com/optical-character-recognition
+<<<<<<< HEAD
 - https://pyimagesearch.com/2016/11/07/intersection-over-union-iou-for-object-detection/
+=======
+>>>>>>> 53957c72716f740c015ada2cb76149f8863b7f3e
